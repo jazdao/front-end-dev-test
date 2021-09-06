@@ -1,1 +1,356 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        margin: 0;
+        padding: 0;
+
+        /********** GENERAL **********/
+        h1 {
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            font-size: 3.5em;
+            line-height: 1.3em;
+
+            @media screen and (max-width: 500px) {
+                font-size: 2.3em;
+            }
+        }
+        
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            text-transform: uppercase;
+            font-size: 2.5em;
+
+            @media screen and (max-width: 500px) {
+                font-size: 2em;
+            }
+        }
+        
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        
+        p {
+            font-family:'Trebuchet MS', 'Arial', sans-serif;
+            font-size: .9em;
+            line-height: 1.8em;
+        }
+
+        .button {
+            padding: 1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 450;
+            color: white;
+        }
+
+        /********** HEADER **********/
+        header {
+            display: block;
+            position: fixed;
+            top: 0px;
+            width: 100vw;
+            height: 4.5em;
+            transition: all 300ms ease;
+            transition-property: margin, background-color;
+            z-index: 1000;
+
+            #logo {
+                position: absolute;
+                width: 17%;
+                min-width: 12em;
+                left: 12%;
+                margin-top: 1.5em;
+            }
+        }
+
+        header.sticky {
+            background-color: white;
+            margin-top: -1em;
+        }
+
+        /********** HERO HEADER **********/
+        #hero-header {
+            height: 100vh;
+            width: 100%;
+            background-image: url("/src/images/hero.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            #hero-message {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                .outline {
+                    display: block;
+                    -webkit-text-stroke: 1px white;
+                    color: transparent;
+                    text-transform: uppercase;
+                    font-size: 1.2em;
+                }
+
+                .button {
+                    display: inline;
+                    margin-top: 1em;
+                    background-color: transparent;
+                    border: rgb(160, 75, 182) solid 2px;
+                    transition: all ease-in 200ms;
+                    transition-property: background-color, padding;
+                }
+
+                .button:hover {
+                    background-color:rgb(160, 75, 182);
+                    padding-left: 3.5em;
+                    padding-right: 3.5em;
+                }
+            }
+        }
+
+        /********** BANNERS **********/
+        .banner {
+            overflow: hidden;
+
+            // GENERAL
+            .center-text {
+                width: 70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .shift-right {
+                margin-left: 25%;
+            }
+
+            .shift-left {
+                margin-right: 25%;
+            }
+
+            .spacing-md {
+                padding-top: 5em;
+                padding-bottom: 5em;
+            }
+
+            .spacing-lg {
+                padding-top: 10em;
+                padding-bottom: 10em;
+            }
+
+            // BLURB BANNER
+            &#blurb-banner {
+                h2 {
+                    color: purple;
+                }
+
+                img {
+                    display: block;
+                    margin: auto;
+                    width: 100%;
+                }
+
+                a {
+                    color: purple;
+                    font-weight: bold;
+                    transition: border-width ease-in 125ms;
+                    border-bottom: rgb(160, 75, 182) solid 0px;
+                    padding-bottom: .3em;
+                }
+    
+                a:hover {
+                    color: rgb(160, 75, 182);
+                    border-width: 2.7px;
+                    text-decoration: none;
+                }
+            }
+
+            // MIDWAY BANNERS
+            &.midway {
+                position: relative;
+
+                h2 {
+                    color: purple;
+                }
+
+                .button {
+                    display: inline;
+                    margin-top: 1em;
+                    background-color: darkorange;
+                    transition: all ease-out 350ms;
+                    transition-property: background-color, padding;
+                    border-bottom: none;
+                }
+    
+                .button:hover {
+                    color: white;
+                    background-color:rgb(255, 94, 0);
+                    border: rgb(255, 94, 0) solid 3px;
+                    padding-right: 7.5em;
+
+                    @media screen and (max-width: 500px) {
+                        padding-right: 4em;
+                    }
+                }
+
+                &#midway-1 {
+                    .content {
+                        position: absolute;
+                        top:50%;
+                        left:25%;
+                        transform: translateX(-50%) translateY(-50%);
+
+                        @media screen and (max-width: 750px) {
+                            width: 80%;
+                            left: 50%;
+                        }
+                    }
+                }
+
+                &#midway-2 {
+                    .content {
+                        position: absolute;
+                        top:50%;
+                        left:75%;
+                        transform: translateX(-50%) translateY(-50%);
+
+                        @media screen and (max-width: 750px) {
+                            width: 80%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+
+            // FEATURES BANNER
+            &#features-banner {
+                a {
+                    color: purple;
+                    font-weight: bold;
+                    transition: border-width ease-in 125ms;
+                    border-bottom: rgb(160, 75, 182) solid 0px;
+                    padding-bottom: .3em;
+                }
+    
+                a:hover {
+                    color: rgb(160, 75, 182);
+                    border-width: 2.7px;
+                    text-decoration: none;
+                }
+
+                .features-icons {
+                    width: 100%;
+                    background-color: whitesmoke;
+    
+                    .icons-container {
+                        display: block;
+
+                        .icon-group {
+                            margin: 1em;
+                            min-width: 15em;
+
+                            .icon {
+                                border: rgb(160, 75, 182) 2px solid;
+                                border-radius: 50%;
+                                padding: 2em;
+                                width: 60%;
+                                margin: auto;
+                                transition: all ease-out 500ms;
+                                transition-property: border, transform;
+                            }
+
+                            .icon:hover {
+                                border-width: 3px;
+                                transform: rotate(360deg) scale(1.1);
+                            }
+
+                            h3 {
+                                margin-top: .5em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // TESTIMONIALS
+            &#testimonials-banner {
+                img {
+                    width: 70%;
+                }
+
+                .slider-container {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: left;
+
+                    .slider {
+                        width: 70%;
+
+                        .element {
+                            padding-left: 3em;
+                            padding-right: 3em;
+
+                            h3 {
+                                text-transform: none;
+                                color: purple;
+                            }
+                        }
+
+                        @media screen and (max-width: 750px) {
+                            display: block;
+                            margin: auto;
+                            margin-bottom: 5em;
+                        }
+                    }
+
+                    .slick-prev:before {
+                        color:darkgray;
+                        font-size: 50px;
+                    }
+
+                    .slick-next:before {
+                        color: darkgray;
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            // SOCIAL MEDIA
+            &#social-media {
+                padding-top: 2em;
+                padding-bottom: 2em;
+                text-align: center;
+                background-color: whitesmoke;
+
+                .sm-icon {
+                    display: inline-block;
+                    width: 5em;
+                    margin: 1em;
+                }
+            }
+        }
+    }
+}
+
+
+

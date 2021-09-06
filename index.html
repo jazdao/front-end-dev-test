@@ -3,13 +3,213 @@
   <head>
     <meta charset="utf-8">
     <title>Rooster Grin Front End Dev Test</title>
-  </head>
-  <body>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <!-- SLICK STYLESHEETS-->
+    <link rel="stylesheet" type="text/css" href="/src/scss/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/src/scss/slick/slick-theme.css"/>
+
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+
+  <body>
+    <header class="animate__animated animate__bounceInLeft">
+      <img id="logo" src="/src/images/logo-white.svg" alt="Rooster Grin logo">
+    </header>
+
+    <!-- HERO HEADER -->
+    <section id="hero-header">
+      <div id="hero-message" class="animate__animated animate__fadeIn animate__delay-1s">
+          <h1><span class="outline">Welcome to</span> Rooster Grin</h1>
+          <a class="button animate__animated animate__fadeIn animate__delay-2s" href="#">Button Button</a>
+      </div>
+    </section>
+
+    <!-- BLURB BANNER -->
+    <section id="blurb-banner" class="banner">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="center-text shift-right spacing-md">
+            <h2>Lorem ipsum</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus vehicula lacus ut suscipit. Donec eget justo a justo imperdiet gravida sit amet vel est. Morbi faucibus, ligula et eleifend ultricies, felis quam viverra mauris, et pellentesque metus lectus vel tellus. Maecenas in orci vitae sapien finibus egestas. Ut gravida sapien ut congue pellentesque. Ut imperdiet viverra sapien et commodo.
+            </p>
+            <a href="#">&#62; Lorem Ipsum</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="/src/images/img-1.jpg" alt="sunset backdrop highlighting the silhouette of a hiker helping another across a gulf" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
+    <!-- MIDWAY BANNER 1 -->
+    <section id="midway-1" class="midway banner">
+      <img src="/src/images/banner-1.jpg" alt="">
+      <div class="content">
+        <h2>Lorem Ipsum</h2>
+        <br />
+        <a class="button" href="#">Button Button</a>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features-banner" class="banner">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="center-text shift-right spacing-lg">
+            <h2>Lorem ipsum</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus vehicula lacus ut suscipit. Donec eget justo a justo imperdiet gravida sit amet vel est. Morbi faucibus, ligula et eleifend ultricies, felis quam viverra mauris, et pellentesque metus lectus vel tellus.
+            </p>
+            <a href="#">&#62; Lorem Ipsum</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 features-icons spacing-md">
+            <div class="icons-container">
+              <div class="row">
+                <div class="col-sm-5 icon-group">
+                  <div class="icon">
+                    <img src="/src/images/home-expertise.svg">
+                  </div>
+                  <h3>Lorem</h3>
+                </div>
+                <div class="col-sm-5 icon-group">
+                  <div class="icon">
+                    <img src="/src/images/home-hygiene.svg">
+                  </div>
+                  <h3>Lorem Ipsum</h3>
+                </div>
+              </div>
+            
+              <div class="row">
+                <div class="col-sm-5 icon-group">
+                  <div class="icon">
+                    <img src="/src/images/home-lab.svg">
+                  </div>
+                  <h3>Lorem</h3>
+                </div>
+                <div class="col-sm-5 icon-group">
+                  <div class="icon">
+                    <img src="/src/images/home-retention.svg">
+                  </div>
+                  <h3>Lorem Ipsum</h3>
+                </div>
+              </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MIDWAY BANNER 2 -->
+    <section id="midway-2" class="midway banner">
+      <img src="/src/images/banner-2.jpg" alt="">
+      
+      <div class="content">
+        <h2>Lorem Ipsum</h2>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus vehicula lacus ut suscipit. Donec eget justo a justo imperdiet gravida sit amet vel est. Morbi faucibus, ligula et eleifend ultricies, felis quam viverra mauris, et pellentesque metus lectus vel tellus.
+        </p>
+        <br />
+        <a class="button" href="#">Button Button</a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials-banner" class="banner">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="center-text shift-right spacing-lg">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <br />
+            <img src="/src/images/ratings.png">
+          </div>
+        </div>
+
+        <div class="col-sm-6 slider-container">
+          <div class="slider shift-left">
+            <div id="slick-slider" data-slick='{}'>
+              <div class="element">
+                <h3>John Doe 8/05/19</h3>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus vehicula lacus ut suscipit. Donec eget justo a justo imperdiet gravida sit amet vel est.
+                </p>
+              </div>
+              <div class="element">
+                <h3>Jane Doe 9/15/20</h3>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus vehicula lacus ut suscipit. Donec eget justo a justo imperdiet gravida sit amet vel est. Morbi faucibus, ligula et eleifend ultricies, felis quam viverra mauris, et pellentesque metus lectus vel tellus.
+                </p>
+              </div>
+              <div class="element">
+                <h3>Gary Stu 3/02/21</h3>
+                <br />
+                <p>
+                  Morbi faucibus, ligula et eleifend ultricies, felis quam viverra mauris, et pellentesque metus lectus vel tellus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+    <section id="social-media" class="banner">
+      <h4>Follow Us:</h4>
+      <div class="sm-icon">
+        <a href="http://www.roostergrin.com/">
+          <img src="/src/images/instagram.svg">
+        </a>
+      </div>
+
+      <div class="sm-icon">
+        <a href="https://www.facebook.com/RoosterGrin/">
+          <img src="/src/images/facebook.svg">
+        </a>
+      </div>
+    </section>
 
     <script type="text/javascript" src="bundle.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+      $("#slick-slider").slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        arrows: true,
+        dots: true,
+        
+      });
+
+      var checkHeader = (function() {
+			    let scrollPosition = Math.round(window.scrollY);
+			    if (scrollPosition > 30){
+			        document.querySelector("header").classList.add("sticky");
+              document.getElementById("logo").src = "/src/images/logo-color.svg";
+			    }
+			    else {
+			        document.querySelector("header").classList.remove("sticky");
+              document.getElementById("logo").src = "/src/images/logo-white.svg";
+			    }
+			});
+
+			window.addEventListener("scroll", checkHeader);
+    </script>
   </body>
 </html>
